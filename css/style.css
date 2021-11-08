@@ -11,15 +11,37 @@
 }
 
 body {
+  margin: 0;
   color: var(--main-text-color);
   font-family: roboto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .list {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* outline: 2px solid tomato; */
+}
+
 /* Оформение шапки */
+
+.header {
+  background-color: #ccc;
+}
 
 .logo {
   color: #000000;
@@ -60,6 +82,11 @@ body {
 /* Герой */
 
 .button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 0;
+  height: 50px;
   color: var(--button-color);
   background-color: var(--accent-text-color);
   cursor: pointer;
@@ -73,21 +100,23 @@ body {
 }
 
 .hero {
+  text-align: center;
   background-color: var(--intermediate-color);
 }
 
 .header-hero {
+  margin-bottom: 30px;
   color: var(--button-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 /* Заголовки Н2 */
 .heading {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -97,7 +126,30 @@ body {
 
 /* Особенности */
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.features {
+  display: flex;
+  margin-top: 94px;
+}
+
+.features li + li {
+  margin-left: 30px;
+}
+
 .subtitle {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -105,6 +157,7 @@ body {
 }
 
 .subtitle-text {
+  width: 270px;
   color: var(--secondary-text-color);
 }
 
@@ -114,13 +167,52 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+/* Чем мы занимаемся */
+
+.granting-section {
+  margin-top: 94px;
+}
+
+.granting {
+  display: flex;
+  padding-left: 0;
+}
+
+.granting li + li {
+  margin-left: 30px;
+}
+
 /* Наша команда */
 
+.command-div {
+  background-color: #f5f4fa;
+  padding: 94px 0;
+  margin-top: 94px;
+}
+
+.command-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.command-list li {
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--button-color);
+}
+
+.command-list li + li {
+  margin-left: 30px;
+}
+
 .text {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 
 .text-pade {
+  margin-bottom: 30px;
   font-weight: 400;
   color: var(--secondary-text-color);
 }
@@ -137,6 +229,27 @@ body {
 
 .footer {
   background-color: var(--intermediate-color);
+  height: 252px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: var(--button-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.footer-logo .logo-span {
+  color: var(--accent-text-color);
+}
+
+.footer-list {
+  padding-left: 0;
 }
 
 .list-link-span {
