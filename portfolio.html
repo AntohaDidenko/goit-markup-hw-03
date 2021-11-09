@@ -10,34 +10,37 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!--content header-->
-    <header>
-        <nav>
-            <a href="/" class="logo">
-                <span class="logo-span">Web</span>Studio
-            </a>
+    <header class="header">
+        <div class="container header-div">
+            <nav class="header-nav">
+                <a href="#" class="logo">
+                    <span class="logo-span">Web</span>Studio
+                </a>
+                <ul class="items list">
+                    <li class="items-nav"><a href="./index.html" class="list-nav">Студия</a></li>
+                    <li class="items-nav"><a href="" class="list-nav current">Портфолио</a></li>
+                    <li class="items-nav"><a href="" class="list-nav">Контакты</a></li>
+                </ul>
+            </nav>
             <ul class="items list">
-                <li><a href="./index.html" class="list-nav">Студия</a></li>
-                <li><a href="./portfolio.html" class="list-nav current">Портфолио</a></li>
-                <li><a href="" class="list-nav">Контакты</a></li>
+                <li class="items-contacts"><a href="mailto:info@devstudio.com" class="list-nav">info@devstudio.com</a>
+                </li>
+                <li class="items-contacts"><a href="tel:+380961111111" class="list-nav">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <address>
-            <ul class="items list">
-                <li><a href="mailto:info@devstudio.com" class="list-nav">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="list-nav">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        </div>
     </header>
-    <main>
-        <h1>Портфолио</h1>
+    <main class="container">
+        <h1 class="visually-hidden">Портфолио</h1>
         <ul class="list-buttons">
-            <li><button type="button" class="button-portfolio">Веб-сайты</button></li>
             <li><button type="button" class="button-portfolio">Все</button></li>
+            <li><button type="button" class="button-portfolio">Веб-сайты</button></li>
             <li><button type="button" class="button-portfolio">Приложения</button></li>
             <li><button type="button" class="button-portfolio">Дизайн</button></li>
             <li><button type="button" class="button-portfolio">Маркетинг</button></li>
@@ -109,16 +112,18 @@
         </ul>
     </main>
     <footer class="footer">
-        <a href="/" class="logo">
-            <span class="logo-span">Web</span>Studio
-        </a>
-        <address>
-            <ul class="list about">
-                <li><a href="" class="list-link-span">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com" class="list-link">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="list-link">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <a href="/" class="footer-logo">
+                <span class="logo-span">Web</span>Studio
+            </a>
+            <address>
+                <ul class="list about footer-list">
+                    <li><a href="" class="list-link-span">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a href="mailto:info@devstudio.com" class="list-link">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="list-link">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
