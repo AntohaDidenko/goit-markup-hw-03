@@ -13,7 +13,7 @@
 body {
   margin: 0;
   color: var(--main-text-color);
-  font-family: roboto;
+  font-family: roboto, sans-serif;
 }
 
 h1,
@@ -24,6 +24,12 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -38,6 +44,10 @@ ul {
 }
 
 /* Оформение шапки */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-div,
 .header-nav {
@@ -124,6 +134,7 @@ ul {
 }
 
 .hero {
+  padding: 200px 0;
   text-align: center;
   background-color: var(--intermediate-color);
 }
@@ -163,9 +174,13 @@ ul {
   margin: -1px;
 }
 
+.features-section {
+  padding: 94px 0;
+}
+
 .features {
+  padding-left: 0;
   display: flex;
-  margin-top: 94px;
 }
 
 .features li + li {
@@ -195,7 +210,7 @@ ul {
 /* Чем мы занимаемся */
 
 .granting-section {
-  margin-top: 94px;
+  padding-bottom: 94px;
 }
 
 .granting {
@@ -209,10 +224,9 @@ ul {
 
 /* Наша команда */
 
-.command-div {
+.command {
   background-color: #f5f4fa;
   padding: 94px 0;
-  margin-top: 94px;
 }
 
 .command-list {
@@ -221,6 +235,8 @@ ul {
 }
 
 .command-list li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--button-color);
 }
@@ -252,13 +268,13 @@ ul {
 /* Footer */
 
 .footer {
+  padding: 60px 0;
   background-color: var(--intermediate-color);
   height: 252px;
 }
 
 .footer-logo {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
   color: var(--button-color);
   font-family: Raleway;
@@ -274,6 +290,14 @@ ul {
 
 .footer-list {
   padding-left: 0;
+}
+
+.footer-list li {
+  margin-bottom: 9px;
+}
+
+.footer-list li:last-child {
+  margin-bottom: 0;
 }
 
 .list-link-span {
@@ -304,10 +328,14 @@ ul {
 
 /* Портфолио */
 
+.section-portfolio {
+  padding: 94px 0;
+}
+
 .list-buttons {
   display: flex;
   padding-left: 0;
-  margin-top: 94px;
+  margin-bottom: 50px;
   justify-content: center;
   font-weight: 500;
   font-size: 16px;
@@ -337,8 +365,6 @@ ul {
 .list-portfolio {
   display: flex;
   padding-left: 0;
-  margin-top: 50px;
-  margin-bottom: 94px;
   flex-wrap: wrap;
   list-style: none;
   text-decoration: none;
@@ -387,5 +413,6 @@ ul {
 }
 
 .link-portfolio {
+  display: block;
   text-decoration: none;
 }
